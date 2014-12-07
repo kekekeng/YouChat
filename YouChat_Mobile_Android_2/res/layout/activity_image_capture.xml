@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/surface_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/bone2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/switch_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/media_textview_states"
+            android:src="@drawable/switch_camera_states"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/center_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/record_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/done_button"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/media_textview_states"
+                android:src="@drawable/ic_action_record" />
+
+            <TextView
+                android:id="@+id/done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rounded_bubble_green"
+                android:drawableLeft="@drawable/ic_action_done"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="@string/done"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_thumbnail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/center_buttons"
+            android:background="@drawable/media_textview_states"
+            android:src="@drawable/image_placeholder"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

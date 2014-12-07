@@ -1,0 +1,48 @@
+3/18/14 Brian Lichtenwalter
+
+Chat list add & delete chat session ensure list is refreshed.
+Fix video capture crash at max time or 30 seconds.
+
+3/17/14 Brian Lichtenwalter
+
+Video capture through Camera API improvements.  Removed video capture via external app menuitem.
+Show first & last name in action bar subtitle, contact list, chat list, chat details.
+Login progressbar container is clickable, thus does not allow tap-through to text edits and buttons.
+Fix contact list row item chat click, so that action bar items are displayed appropriately in chat details.
+Fix chat details such that only successfully delivered messages appear in history.
+Created a new ANT distro target for building APKs for different domains.
+
+3/14/14 Brian Lichtenwalter
+
+Fix Contact & Chat details action bar icons to not display in other tabs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

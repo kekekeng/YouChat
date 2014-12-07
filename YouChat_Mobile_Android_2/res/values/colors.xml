@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <drawable name="dkgray">#777777</drawable>
+      
+    <color name="background">#fffafafa</color>
+    <color name="background_translucent">#55fafafa</color>
+    <color name="access_text_color">#ff183A62</color>
+    <color name="edit_text_color1">#ff11A1D9</color>
+    <color name="edit_text_color">#ffeeeeee</color>
+    <color name="edit_text_color_hint">#ffCCCCCC</color>
+    <color name="transparent">#00000000</color>
+    <color name="acesse_lightblue">#ff11A1D9</color>
+    <color name="acesse_darkblue">#ff183A62</color>
+    <color name="acesse_blue1">#00a3b5</color>
+    <color name="acesse_blue2">#00b3b3</color>
+    <color name="acesse_blue3">#69d2d2</color>
+    <color name="acesse_blue4">#008e9f</color>
+    <color name="acesse_silver">#ffCCCCCC</color>
+    <color name="black">#ff333333</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="bone">#ffdddddd</color>
+    <color name="bone2">#77777777</color>
+    <color name="white">#ffeeeeee</color>
+    <color name ="text_blue">#3292ff</color>
+    <color name ="text_light_blue">#83c3f5</color>
+    <color name ="chat_light_blue">#93daf8</color>
+    <color name="green">#ff33ff33</color>
+	<color name="white_alpha">#bfffffff</color>
+	<color name="red">#FFDD5555</color>
+	<color name="button_background_pressed">#FFCCCCCC</color>
+	<color name="contact_grey_bg">#dedede</color>
+</resources>

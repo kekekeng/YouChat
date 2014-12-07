@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item
+        android:id="@+id/menu_delete_contact"
+        android:orderInCategory="91"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_delete"/>
+</menu>

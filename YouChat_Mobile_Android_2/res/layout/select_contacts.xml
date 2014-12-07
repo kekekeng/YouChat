@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/select_contacts"
+        android:textColor="@color/text_blue"
+        android:textSize="20dp"
+        />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/acesse_silver" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageView
+                    android:id="@+id/button_photo"
+                    android:layout_width="@dimen/contact_list_icon_size"
+                    android:layout_height="@dimen/contact_list_icon_size"
+                    android:background="@drawable/contacts_green_ring"
+                    android:layout_marginBottom="10dp"   
+                    android:layout_marginTop="10dp"                
+                    android:layout_marginLeft="7dp"
+                    android:padding="2dp"                    
+                    android:src="@drawable/contact_photo_bg" />
+
+        <TextView
+            android:id="@+id/firstName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_photo"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/first"
+            android:textColor="@color/ltgray"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/lastName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/firstName1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/last"
+            android:textColor="@color/ltgray"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/lastName1"
+            android:layout_alignBottom="@+id/lastName1"
+            android:layout_alignParentRight="true"
+            android:text="@string/unblock"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="1dp"
+        android:background="@color/acesse_silver" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/button_photo2"
+            android:layout_width="@dimen/contact_list_icon_size"
+            android:layout_height="@dimen/contact_list_icon_size"
+            android:background="@drawable/contacts_green_ring"
+            android:layout_marginBottom="10dp"   
+            android:layout_marginTop="10dp" 
+            android:layout_marginLeft="7dp"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/contact_photo_bg" />
+
+         <TextView
+            android:id="@+id/firstName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_photo2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/first"
+            android:textColor="@color/ltgray"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/lastName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/firstName2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/last"
+            android:textColor="@color/ltgray"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/unblock"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/acesse_blue2" >
+    </ListView>
+
+</LinearLayout>

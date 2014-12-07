@@ -1,0 +1,55 @@
+# view AndroidManifest.xml #generated:89
+-keep class com.acesse.youchat.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.acesse.youchat.AudioCaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.acesse.youchat.ChangePasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.acesse.youchat.ImageCaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.acesse.youchat.MainApplication { <init>(...); }
+
+# view res/layout/chat_media.xml #generated:12
+-keep class com.acesse.youchat.RecyclingImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.acesse.youchat.VideoCaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.acesse.youchat.VideoPlaybackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.acesse.youchat.YouChatCreateAccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.acesse.youchat.YouChatHomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.acesse.youchat.YouChatLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.acesse.youchat.YouChatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.acesse.youchat.YouChatUpdateAccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.acesse.youchat.contentprovider.YouChatContactContentProvider { <init>(...); }
+
+# onClick res/layout/activity_create_account.xml #generated:112
+# onClick res/layout/activity_login.xml #generated:93
+-keepclassmembers class * { *** onCreateAccount(...); }
+
+# onClick res/layout/activity_login.xml #generated:64
+-keepclassmembers class * { *** onForgotPassword(...); }
+
+# onClick res/layout/activity_login.xml #generated:77
+-keepclassmembers class * { *** onLogin(...); }
+
+# onClick res/layout/activity_update_profile.xml #generated:143
+-keepclassmembers class * { *** onUpdateProfile(...); }
+

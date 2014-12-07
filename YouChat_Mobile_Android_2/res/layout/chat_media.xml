@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/chat_image_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <com.acesse.youchat.RecyclingImageView
+            android:id="@+id/chat_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/chat_thumbnail_max_size"
+            android:minHeight="@dimen/chat_thumbnail_min_size"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/chat_image_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_play"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/chat_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/duration_bg"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="android:progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:max="100"
+        android:visibility="gone" />
+
+</FrameLayout>

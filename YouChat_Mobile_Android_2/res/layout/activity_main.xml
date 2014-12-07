@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/network_unreachable_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/error_network_unreachable"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="italic"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/acesse_darkblue" />
+    </FrameLayout>
+
+</LinearLayout><!--
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YouChatHomeActivity" />
+-->

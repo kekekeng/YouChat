@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <ProgressBar
+            android:id="@+id/recorder_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:max="30"
+            android:minHeight="16dp"
+            android:progressDrawable="@drawable/greenprogress"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/bone2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/switch_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="@drawable/media_textview_states"
+            android:src="@drawable/switch_camera_states"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/media_textview_states"
+            android:src="@drawable/ic_action_record" />
+
+        <TextView
+            android:id="@+id/done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_bubble_green"
+            android:drawableLeft="@drawable/ic_action_done"
+            android:gravity="center_vertical"
+            android:text="@string/done"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/video_thumbnail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/media_textview_states"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_placeholder"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/bone2"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/zero"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

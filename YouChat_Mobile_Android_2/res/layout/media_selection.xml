@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/media_textview_states"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/camera"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/bone" />
+
+    <TextView
+        android:id="@+id/video_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/media_textview_states"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/capture_video"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/bone" />
+
+    <TextView
+        android:id="@+id/audio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/media_textview_states"
+        android:drawableLeft="@android:drawable/ic_menu_info_details"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/capture_audio"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/bone" />
+
+    <TextView
+        android:id="@+id/gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/media_textview_states"
+        android:drawableLeft="@android:drawable/ic_menu_gallery"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/gallery"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/bone" />
+
+    <TextView
+        android:id="@+id/attachments_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/media_textview_states"
+        android:drawableLeft="@drawable/ic_menu_attachment"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="@string/attachments"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/bone" />
+</LinearLayout>

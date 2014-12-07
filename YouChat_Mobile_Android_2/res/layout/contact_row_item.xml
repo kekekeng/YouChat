@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#69d2d2"
+        android:orientation="horizontal"
+        android:padding="10dp" >        
+
+        <ImageView
+            android:id="@+id/button_photo"
+            android:layout_width="@dimen/photo_icon_size"
+            android:layout_height="@dimen/photo_icon_size"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/green_layer" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="@string/name2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button_chat"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/edit_text_padding"
+            android:background="@drawable/contact_chat_icon" />
+
+        <!--
+         <ImageView
+        android:id="@+id/presence"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/presence_level" />
+        -->
+
+        <ImageView
+            android:id="@+id/disclosure"
+            android:layout_width="15dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/white_next_arrow" />
+    </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/acesse_blue2" />
+
+</LinearLayout>

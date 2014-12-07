@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/login_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:src="@drawable/youchat_logo" />
+
+            <EditText
+                android:id="@+id/username_text"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_edittext"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center_vertical|left"
+                android:hint="@string/youchat_id"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:maxLength="20"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/edit_text_color"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/edit_text_color_hint" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/password_text"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center_vertical|left"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLength="25"
+                android:padding="@dimen/edit_text_padding"
+                android:textColor="@color/edit_text_color"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/edit_text_color_hint" />
+
+            <TextView
+                android:id="@+id/forgot_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onForgotPassword"
+                android:text="@string/forgot_password"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/access_text_color" />
+
+            <TextView
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/acesse_button"
+                android:clickable="true"
+                android:onClick="onLogin"
+                android:padding="10dp"
+                android:text="@string/login"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/create_account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/acesse_button"
+                android:clickable="true"
+                android:onClick="onCreateAccount"
+                android:padding="10dp"
+                android:text="@string/create_account"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" 
+                android:textStyle="bold"/>
+            
+            <TextView 
+                android:id="@+id/app_version_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/splash_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/youchat_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progressbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/background_translucent"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:indeterminate="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

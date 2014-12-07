@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/blocked"
+        android:textColor="@color/text_blue"
+        android:textSize="20dp"
+        />
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/acesse_silver" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/firstName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/first"
+            android:textColor="@color/text_blue"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/lastName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/firstName1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/last"
+            android:textColor="@color/text_blue"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/unblock"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_marginTop="3dp"
+        android:layout_height="1dp"
+        android:background="@color/acesse_silver" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/firstName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/first"
+            android:textColor="@color/text_blue"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/lastName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/firstName2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/last"
+            android:textColor="@color/text_blue"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/unblock"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    
+    <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/acesse_blue2" />
+</LinearLayout>

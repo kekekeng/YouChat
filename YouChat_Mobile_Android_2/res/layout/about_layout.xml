@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/youchat_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/youchat_logo" />
+
+    <TextView
+        android:id="@+id/version_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/youchat_logo"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+         />
+    
+     <TextView
+        android:id="@+id/env_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/version_text_view"
+         />
+
+    <TextView
+        android:id="@+id/acesse_address_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/env_text_view"
+        android:textSize="16sp"
+        android:text="@string/acesse_address"
+        android:textColor="@color/black" />
+       
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/acesse_address_text_view"
+        android:layout_marginTop="10dp"
+        android:text="@string/acesse_technology_office"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/acknowledgements_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/acesse_lightblue"
+        android:padding="10dp"
+        android:text="@string/license_linphone"
+        android:textColor="@color/white" />
+
+    <TextView
+        style="@style/TextSize_16_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/acknowledgements_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/acknowledgements" />
+
+</RelativeLayout>

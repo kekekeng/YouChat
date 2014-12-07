@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>130</x>
+      <y>110</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_LinphoneManager_
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>110</y>
+      <w>226</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+MESSAGE.RCVD(from)
+SUBSCRIPTION(friend,url)
+PRESENCE(friend)
+
+ 
+</panel_attributes>
+    <additional_attributes>120;300;120;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>110</y>
+      <w>150</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;
+MESSAGE.READ</panel_attributes>
+    <additional_attributes>80;300;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>310</x>
+      <y>110</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_ChatFragment_
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>500</x>
+      <y>110</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_ChatListFragment_
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>670</x>
+      <y>110</y>
+      <w>160</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_ContactListFragment_
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>850</x>
+      <y>110</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_ChatHomeActivity_
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>830</x>
+      <y>110</y>
+      <w>162</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+MESSAGE.RCVD
+MESSAGE.READ</panel_attributes>
+    <additional_attributes>90;30;90;300</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>120</x>
+      <y>410</y>
+      <w>890</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Broadcast
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>660</x>
+      <y>110</y>
+      <w>162</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+MESSAGE.RCVD
+SUBSCRIPTION
+PRESENCE</panel_attributes>
+    <additional_attributes>90;30;90;300</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>110</y>
+      <w>162</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+MESSAGE.RCVD</panel_attributes>
+    <additional_attributes>90;30;90;300</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>340</x>
+      <y>110</y>
+      <w>162</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+
+  
+MESSAGE.RCVD</panel_attributes>
+    <additional_attributes>90;30;90;300</additional_attributes>
+  </element>
+</diagram>

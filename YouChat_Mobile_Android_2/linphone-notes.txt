@@ -1,0 +1,45 @@
+# Updates to Linphone core
+
+Add ChatMessage To field:
+
+    LinphoneChatMessage.java:
+    
+	    LinphoneAddress getTo();
+
+    LinphoneChatMessageImpl.java:
+
+	    private native long getTo(long ptr);
+
+            @Override
+	    public LinphoneAddress getTo() {
+		    return new LinphoneAddressImpl(getTo(nativePtr),LinphoneAddressImpl.WrapMode.FromConst);
+	    }
+
+    linphonecore_jni.cc:
+
+            extern "C" jlong Java_org_linphone_core_LinphoneChatMessageImpl_getTo(JNIEnv*  env ,jobject  thiz ,jlong ptr) {
+	            return (jlong) linphone_chat_message_get_to((LinphoneChatMessage*)ptr);
+            }
+
+    message_storage.c:
+
+	        if(atoi(argv[3])==LinphoneChatMessageIncoming){
+			new_message->dir=LinphoneChatMessageIncoming;
+			from=linphone_address_new(argv[2]);
+		        to=linphone_address_new(argv[1]);
+		} else {
+			new_message->dir=LinphoneChatMessageOutgoing;
+			from=linphone_address_new(argv[1]);
+		        to=linphone_address_new(argv[2]);
+		}
+		linphone_chat_message_set_from(new_message,from);
+	        linphone_chat_message_set_to(new_message,to);
+		linphone_address_destroy(from);
+	        linphone_address_destroy(to);
+
+
+Add ChatMessage UploadFailed Status:
+
+    LinphoneChatMessage.java:
+
+	    public final static State UploadFailed = new State(4,"UploadFailed");

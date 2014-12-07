@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YouChat</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="login">Login</string>
+    <string name="login_failed">Login failed. Please try again.</string>
+    <string name="temporary_password">Do you want to create a temporary password?</string>
+    <string name="error_temporary_password">Reset account password failed (Youchat ID is invalid), please contact customer support.</string>
+    <string name="try_again">Try Again</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="contacts">Contacts</string>
+    <string name="reset_password">Reset Account Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="youchat_id">YouChat ID</string>
+    <string name="password">Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="email">Email address</string>
+    <string name="action_logout">Logout</string>
+    <string name="user_info">User Info</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_profile_details">Profile Details</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="first">  First</string>
+    <string name="last">Last</string>
+    <string name="username">username</string>
+    <string name="companyName">Company Name</string>
+    <string name="section_optional">Optional</string>
+    <string name="name">Name:</string>
+    <string name="name2">Name</string>
+    <string name="company">Company:</string>
+    <string name="company_txt">Company</string>
+    <string name="action_add">Add</string>
+    <string name="action_chat_now">Chat Now</string>
+    <string name="action_find">Find</string>
+    <string name="action_update_profile">Update Profile</string>
+    <string name="action_refresh_contacts">Refresh Contacts</string>
+    <string name="send_request">Send Request</string>
+    <string name="msg_temporary_password_created">A temporary password has been emailed to the email account on file.</string>
+    <string name="error_contact_exists">Contact already exists. Please enter a different YouChat ID</string>
+    <string name="error_contact_doesnt_exist">Contact does not exist. Please enter a different YouChat ID</string>
+    <string name="error_contact_is_user">Cannot add yourself as contact. Please enter a different YouChat ID</string>
+    <string name="error_account_already_exists">YouChat ID is already taken. Try a different YouChat ID.</string>
+    <string name="error_account_general">Server failed to create an account (500).</string>
+    <string name="error_account_email_exists">Email address already in use. Try a different email address.</string>
+    <string name="error_invalid_username">YouChat ID is invalid. Please enter a valid YouChat ID.</string>
+    <string name="error_invalid_username2">YouChat ID is blank or invalid . Please try a different YouChat ID.</string>
+    <string name="error_take_picture">Photo capture failed. Please try again.</string>
+    <string name="profile_info_message">Profile details can be modified\nfrom the Settings tab</string>
+    <string name="error_profile_required_fields">First and last names are required fields</string>
+    <string name="pref_disable_account">Disable</string>
+    <string name="unknown_mime_type">The content type is unknown.</string>
+    <string name="download_failed">Download failed. Please check your internet access or try again later.</string>
+    <string name="upload_failed">Upload failed. Please check your internet access or try again later.</string>
+    <string name="media_unavailable">No content found. Please try again.</string>
+    <string name="unable_to_connect">Unable to connect to a network. Please check your network settings and try again later. Thank You.</string>
+    <string name="app_restart_message">Unexpected state. Application restarted.</string>
+    <string name="oops_title">Oops</string>
+    <string name="oops_msg">Well this is embarrassing...\n\nApplication crashes are annoying. Please help us improve the app by sending us this crash report.\n\nThanks,\nThe Acesse YouChat Team</string>
+    <string name="warning_unsentdata">Unsent media data. Data could be lost if send is not clicked</string>
+    <string name="alert_send_report">Send Report</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_text">Alert</string>
+    <string name="upload_error">Upload Error</string>
+    <!--
+    <string name="pref_video_default">VGA (640x480)</string>
+    -->
+    <string name="pref_history_default">30 days</string>
+    <string name="pref_tunnel">Tunnel</string>
+    <string name="pref_tunnel_host">Hostname</string>
+    <string name="pref_tunnel_port">Port</string>
+    <string name="pref_tunnel_mode">Mode</string>
+
+    <!-- do not change order without changing corresponding entry_values in non_localizable_strings.xml -->
+    <string-array name="tunnel_mode_entries">
+        <item>disabled</item>
+        <item>3G only</item>
+        <item>always</item>
+        <item>auto</item>
+    </string-array>
+
+    <string name="incall_notif_active">Audio call ongoing</string>
+    <string name="incall_notif_paused">Paused call ongoing</string>
+    <string name="incall_notif_video">Video capturing call ongoing</string>
+    <string name="CancelButtonText">Cancel</string>
+    <string name="unknown_incoming_call_name">Unknown</string>
+    
+    <string name="pref_transport_udp">UDP</string>
+    <string name="pref_transport_tcp">TCP</string>
+    <string name="pref_transport_tls">TLS</string>
+    <string name="menu_about">About</string>
+    <string name="block_list">Blocked List</string>
+    <string name="blocked">Blocked</string>
+    <string name="select_contacts">Select Contacts</string>
+    <string name="unblock">Unblock</string>
+    <string name="you">You</string>
+    
+    <string name="error_network_unreachable">Network is unreachable.  Please restore connectivity.</string>
+    <string name="acesse_address">Acesse Corporation \n100 Washington Ave S., Ste. 690 \nMinneapolis, MN 55401\n  United States</string>
+    <string name="acesse_technology_office">\u00a9 Acesse Corporation, 2014. \nAll Rights Reserved \n</string>
+    <string name="acknowledgements">Acknowledgements</string>
+    <string name="license_linphone">Belledonne Communications - Liblinphone</string>
+    <string name="profile">Profile</string>
+    <string name="changePassword">Change Password</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="saveHistory">Save history for</string>
+    <string name="youChat">YouChat</string>
+    <string name="prefVideoSize">Preferred Video Size</string>
+    <string name="currentPasword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="rePassword">Re-enter new password</string>
+    <string name="video_size_option">VGA</string>
+    <string name="save_history_option">1 day</string>
+    <string name="alphabets">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="alphaNumeric">abcdefghijklmnopqrstuvwxyz1234567890.</string>   
+    <string name="alert_login">Please enter YouChat ID and password to continue</string>
+    <string name="alert_login2">YouChat ID or password is incorrect. Please try again.</string> 
+    
+    <string name="learnMore"><u>Learn more</u></string>
+    <string name="interestedInACareer"><b>Interested in a New Career?</b> \n Acesse Marketing Consultants earn commissions and bonuses on the sales of Acesse\'s Services</string>
+    <string name="becomeConsultant"><b><u>Become a Consultant</u></b></string>
+    <string name="earnRewards">Join for Free and Earn Rewards</string>
+    <string name="earnRewards2">Over 300,000 Members. Acesse is a global leader in internet products and advertising services for small businesses.</string>
+    <string name="creatingAccount">Creating Account..</string>
+    <string name="done">Done</string>
+    <string name="change_photo">Change\n   Photo</string>
+    <string name="zero">0</string>
+    <string name="twenty">20</string>
+    <string name="smallText">Small Text</string>
+    <string name="typeYouChat">Type YouChat ID</string>
+    <string name="date">Date</string>
+    <string name="sample_text">A quick brown fox jumped over the lazy dog.</string>
+    <string name="no_chat_sessions">No chat sessions</string>
+    <string name="messages">Messages</string>
+    <string name="no_chat_messages">No chat messages</string>
+    <string name="type_messages">Type your message</string>
+    <string name="welcome_youchat">Welcome to YouChat</string>
+    <string name="camera">Camera</string>
+    <string name="capture_video">Capture Video</string>
+    <string name="capture_audio">Capture Audio</string>
+    <string name="gallery">Gallery</string>
+    <string name="attachments">Attachments</string>
+    <string name="version">Version  </string>
+    <string name="error">Error</string>
+    <string name="already_contact">You already have this contact.</string>
+    <string name="message_delete">Do you really want to delete the contact?</string>
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="ok">OK</string>
+    
+    <string name="alert_title">Alert</string>
+    <string name="error_title">Error</string>
+    <string name="alert_change_password">Please enter a different password</string>
+    <string name="alert_change_password1">The current password you have entered is invalid</string>
+    <string name="alert_change_password2">Your password must be 6 - 25 characters in length.</string>
+    <string name="alert_change_password3">One or more fields are either blank or invalid.</string>
+    <string name="alert_change_password4">The passwords you have entered do not match. Please enter the same password in the new and re-enter password fields</string>
+    <string name="password_updated">Password Updated Successfully</string>
+    <string name="error_update_password">Error updating password. Please try again later.</string>
+    <string name="invalid_registrar">Cannot have \'%s\' as your YouChat id. Please enter a different id.</string>
+    <string name="user_required">YouChat ID and email address are required fields.</string>
+    <string name="invalid_user_id">YouChat ID must be 3 - 20 characters in length.</string>
+    <string name="email_invalid">The email address is invalid.</string>
+    <string name="unknown_user_message">\n%s is not in your contact list.\n</string>
+    <string name="alert_add_contact">Add Contact</string>
+    <string name="requests">Requests</string>
+    <string name="request_number">0 REQUEST</string>
+    <string name="like_to_add_contacts">I\'d like to add you to my contacts</string>
+    <string name="added_contact_message">%s contact added.</string>
+    <string name="failed_adding_contact">Failed adding %s contact.</string>
+    
+    <string name="attach_content">Attaching content...</string>
+    <string name="error_attach_content">Error attaching content.</string>
+    <string name="wait_to_finish_download">Please wait for the content to finish downloading.</string>
+    <string name="unknown_content">Unknown content scheme.</string>
+    <string name="unable_to_play">Unable to play this video.</string>
+    <string name="maximum_attachments">A maximum of 5 attachments is supported.</string>
+    <string name="add_contacts">Please go to the contacts tab and add contact(s).</string>
+    <string name="new_chat_session">New Chat Session</string>
+    <string name="delete_chat_session">Delete Chat Session</string>
+    <string name="delete_chat_session2">Do you really want to delete the chat session?</string>
+    <string name="camera_not_initializing">Camera is not initializing for photo capture.</string>
+    <string name="camcorder_profile_unknown">Camcorder profile unknown. Setting to lowest resolution.</string>
+    <string name="error_starting_service">Error starting service.</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+    <string name="ready_to_send">%s ready to send</string>
+    <string name="chat_with">Chat with </string>
+    <string name="in_progress">In Progress</string>
+    <string name="not_delivered">Not Delivered</string>
+    <string name="recent">Recent</string>
+    
+    <string name="select_or_capture_photo">Select or capture picture</string>
+    <string name="text">Text</string>
+    <string name="image">Image</string>
+    <string name="upload">UPLOAD</string>
+    <string name="failed_upload_photo">Oops, failed to upload photo.</string>
+    <string name="youchat_id_rule">YouChat ID should contain characters from a-z, A-Z and 0-9.</string>
+    <string name="a">A</string>
+    <string name="account_updated">Account updated. Logging in...</string>
+    <string name="creation_success_login_failed">Account creation successful, but login failed.</string>
+    
+    
+    
+    
+</resources>
+

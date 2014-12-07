@@ -1,0 +1,5 @@
+# add only modifications
+git add -u 
+
+# commit only modifications
+git commit -a

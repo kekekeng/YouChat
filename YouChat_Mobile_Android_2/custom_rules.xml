@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_rules" >
+
+    <target name="-pre-build">
+        <fail message="Nodejs and/or Sip domain not define.  Please See the README file.">
+            <condition>
+                <not>
+                    <and>
+                        <isset property="config.domain_nodejs"/>
+                        <isset property="config.domain_xmpp"/>
+         	    </and>
+                </not>
+            </condition>
+        </fail>
+        <echo message="Using config.domain=${config.domain}"/>
+        <property name="config-target-path" value="${gen.absolute.dir}/com/acesse/youchat" />
+        <delete file="${config-target-path}/Config.java" />
+        <copy file="config/src/com/acesse/youchat/Config.java" overwrite="true" todir="${config-target-path}" >
+            <filterset>
+                <filter token="CONFIG.LOGGING" value="${config.logging}" />
+                <filter token="CONFIG.DOMAIN_NODEJS" value="${config.domain_nodejs}" />
+                <filter token="CONFIG.DOMAIN_XMPP" value="${config.domain_xmpp}" />
+                <filter token="CONFIG.DEBUG" value="${config.debug}" />
+            </filterset>
+        </copy>
+    </target>
+
+    <target name="releases" description="Build the YouChat release APKs">
+        <xmlproperty file="AndroidManifest.xml"/>
+        <property name="version" value="${manifest(android:versionName)}(${manifest(android:versionCode)})"/>
+        <echo message="Building Version: ${version}"/> 
+        <mkdir dir="release"/>
+        <antcall target="clean"/>
+        <antcall target="release">
+            <param name="config.domain_sip" value="qa3-youchat.acesse.com"/>
+            <param name="config.domain_nodejs" value="qa3-nodejs-youchat.acesse.com"/>
+            <param name="config.debug" value="true"/>
+        </antcall>
+        <copy file="bin/YouChat-release.apk" tofile="release/YouChat-qa3-debug-${version}.apk" />
+        <antcall target="clean"/>
+        <antcall target="release">
+            <param name="config.domain_sip" value="deploy-youchat.acesse.com"/>
+            <param name="config.domain_nodejs" value="deploy-youchat-nodejs.acesse.com"/>
+            <param name="config.debug" value="true"/>
+        </antcall>
+        <copy file="bin/YouChat-release.apk" tofile="release/YouChat-stage2-debug-${version}.apk" />
+        <antcall target="clean"/>
+        <antcall target="release">
+            <param name="config.domain_sip" value="dev1-youchat.acesse.com"/>
+            <param name="config.domain_nodejs" value="dev1-nodejs-youchat.acesse.com"/>
+            <param name="config.debug" value="true"/>
+        </antcall>
+        <copy file="bin/YouChat-release.apk" tofile="release/YouChat-dev1-debug-${version}.apk" />
+        <antcall target="clean"/>
+        <antcall target="release">
+            <param name="config.domain_sip" value="sl-dns-youchat.acesse.com"/>
+            <param name="config.domain_nodejs" value="sl-nodelb-youchat.acesse.com"/>
+            <param name="config.debug" value="true"/>
+        </antcall>
+        <copy file="bin/YouChat-release.apk" tofile="release/YouChat-softlayer2-debug-${version}.apk" />
+    </target>
+</project>

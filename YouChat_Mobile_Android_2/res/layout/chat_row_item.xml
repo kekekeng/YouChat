@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/media_textview_states"
+        android:src="@drawable/ic_action_delete_message"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+
+             <ImageView
+                 android:id="@+id/button_photo"
+                 android:layout_width="@dimen/photo_icon_size"
+                 android:layout_height="@dimen/photo_icon_size"
+                 android:layout_gravity="center_horizontal"
+                 android:background="@drawable/contacts_green_ring"
+                 android:padding="3dp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/contact_photo_bg" />
+             
+             <TextView
+                     android:id="@+id/name_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
+                     android:ellipsize="end"
+                     android:lines="1"
+                     android:text="@string/name2"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/text_blue"
+                      />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"            
+             android:background="@drawable/grey_rounded_button"
+             android:layout_marginLeft="15dp"
+             android:orientation="vertical" >
+
+             <LinearLayout
+                 android:id="@+id/content_container"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="4dp"
+                 android:orientation="vertical" >
+
+                 <ViewStub
+                     android:id="@+id/message_media"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:inflatedId="@+id/chat_media"
+                     android:layout="@layout/chat_media" />
+
+                 <TextView
+                     android:id="@+id/message_text"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:autoLink="web|email|phone"
+                     android:text="@string/sample_text"
+                     android:textAppearance="?android:attr/textAppearanceSmall"
+                     android:textColor="@color/black"
+                   />
+             </LinearLayout>
+         </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

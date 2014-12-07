@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- default color -->
+    <item android:drawable = "@color/transparent" android:state_pressed="false" />
+    <!-- color when selecting -->
+    <item android:drawable ="@color/button_background_pressed" android:state_pressed="true" />
+</selector>
